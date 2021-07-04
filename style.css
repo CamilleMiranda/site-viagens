@@ -13,9 +13,18 @@ button {
   border-radius: 8px;
   font-weight: bold;
   border: 0;
-  background: #78333d;
+  background: rgb(0, 38, 255);
   color: #fff;
   font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*Header*/
@@ -161,7 +170,7 @@ header nav ul li {
 
 .servicos .servicos-title {
   text-align: center;
-  margin: 35px 0;
+  margin: 25px 0;
 }
 
 .servicos .servicos-cards {
@@ -212,40 +221,125 @@ header nav ul li {
   background: rgb(0, 38, 255);
 }
 
-/*Responsividade*/
-
-/*Tablet */
-@media (max-width: 767px) {
+/*Contato e Integração Maps*/
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 
-/* Telemóvel */
-@media (max-width: 480px) {
-  body {
-    margin-bottom: 55px;
+.contato {
+  padding: 60px;
+  position: relative;
+  background-color: #e5e5e5;
+}
+
+.contato .contato-card {
+  width: 350px;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+  z-index: 99;
+  border-radius: 8px;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  top: calc(50% - 150px);
+  left: calc(20% - 175px);
+}
+
+.contato .contato-card h1 {
+  text-align: left;
+  padding-left: 50px;
+}
+
+.contato .contato-card li {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: grey;
+  display: flex;
+  align-items: center;
+}
+
+.contato .contato-card li svg {
+  width: 16px;
+  margin: 10px;
+}
+
+/*Footer*/
+
+.footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.copy {
+  width: 100%;
+  background: #000000;
+  padding: 8px 0;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+/*Responsividade*/
+
+/*especial mapa*/
+@media (max-width: 950px) {
+  .contato {
+    padding: 60px 0;
   }
 
-  header nav ul {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-    z-index: 99;
-
-    background: #78333d;
-    color: white;
-    font-weight: bold;
-    height: 55px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .contato .contato-card {
+    left: 40px;
   }
 
-  header nav img {
-    width: 50%;
-    text-align: center;
+  /*Tablet ou similar */
+  @media (max-width: 800px) {
+    .contato {
+      padding: 20px 0;
+    }
+
+    .contato .contato-card {
+      position: static;
+      margin: 40px auto;
+    }
+  }
+
+  /* Telemóvel */
+  @media (max-width: 480px) {
+    body {
+      margin-bottom: 55px;
+    }
+
+    header nav ul {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      z-index: 99;
+
+      background: #78333d;
+      color: white;
+      font-weight: bold;
+      height: 55px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav img {
+      margin: 30px auto;
+      position: static;
+    }
   }
 }
