@@ -170,7 +170,7 @@ header nav ul li {
 
 .servicos .servicos-title {
   text-align: center;
-  margin: 25px 0;
+  margin: 25px 0 0 0;
 }
 
 .servicos .servicos-cards {
@@ -219,6 +219,7 @@ header nav ul li {
 
 .servicos button {
   background: rgb(0, 38, 255);
+  margin-bottom: 15px;
 }
 
 /*Contato e Integração Maps*/
@@ -268,23 +269,6 @@ header nav ul li {
 .contato .contato-card li svg {
   width: 16px;
   margin: 10px;
-}
-
-/*Footer*/
-
-.footer {
-  width: 100%;
-  background: #000;
-  color: #fff;
-  padding: 20px 0;
-}
-
-.copy {
-  width: 100%;
-  background: #000000;
-  padding: 8px 0;
-  color: #e5e5e5;
-  text-align: center;
 }
 
 /*Responsividade*/
