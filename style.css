@@ -28,21 +28,21 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  margin: auto 50px;
-}
-
-header nav img {
-  margin: 10px 60px;
+  margin: auto 30px;
 }
 
 header nav p {
   font-weight: bold;
-  margin: 20px 80px;
+}
+
+header nav img {
+  margin: 10px 0 0 20px;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
+  margin: 20px 30px 0 0;
 }
 
 header nav ul li {
@@ -244,8 +244,8 @@ header nav ul li {
     align-items: center;
   }
 
-  header nav p {
-    width: 100%;
+  header nav img {
+    width: 50%;
     text-align: center;
   }
 }
